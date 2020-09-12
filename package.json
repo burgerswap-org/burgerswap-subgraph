@@ -1,0 +1,26 @@
+{
+    "name": "TestTokenA",
+    "version": "0.1.0",
+    "scripts": {
+        "migrate": "truffle migrate --reset",
+        "compile": "truffle compile",
+        "flatten": "waffle flatten",
+        "create-local": "graph create shaokun11/TestTokenA --node http://127.0.0.1:8020",
+        "codegen": "graph codegen",
+        "build": "graph build",
+        "deploy-local": "graph deploy shaokun11/TestTokenA --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    },
+    "devDependencies": {
+        "@graphprotocol/graph-cli": "^0.18.0",
+        "@graphprotocol/graph-ts": "^0.18.0"
+    },
+    "dependencies": {
+        "@nomiclabs/buidler-waffle": "^2.1.0",
+        "babel-polyfill": "^6.26.0",
+        "babel-register": "^6.26.0",
+        "ethereum-waffle": "^3.1.0",
+        "truffle": "^5.0.4",
+        "truffle-flattener": "^1.4.4",
+        "truffle-hdwallet-provider": "^1.0.4"
+    }
+}
